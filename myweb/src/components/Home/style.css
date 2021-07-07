@@ -11,6 +11,7 @@
   font-size: 18px;
   text-align: center;
   font-family: "Righteous", cursive;
+  margin-top: 40px;
 }
 
 .home .title p {
@@ -21,58 +22,28 @@
   border: none;
   outline: none;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 24px;
   margin-top: 30px;
   color: #ffffff;
   padding: 10px 15px;
   border-radius: 999px;
   background-color: #3f71f4;
-  font-family: "Raleway", sans-serif;
+  font-family: "Righteous", cursive;
 }
 
-.home .skills {
+.home .person {
   width: 100%;
-  margin-top: 50px;
-  /* display: flex;
-  justify-content: center; */
-  flex-grow: 1;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
 }
 
 .home .person img {
   width: 80%;
 }
 
-.skills h1 {
-  margin-bottom: 20px;
-  font-family: "Raleway", sans-serif;
-}
-
-.content {
-  display: grid;
-  font-size: 24px;
-  grid-template-columns: 1fr 1fr;
-  font-family: "Raleway", sans-serif;
-}
-
-.content div {
-  margin-bottom: 25px;
-}
-
-.content strong {
-  line-height: 25px;
-  padding-bottom: 15px;
-  display: block;
-}
-
-.content li {
-  margin: 0;
-  margin-bottom: 10px;
-}
-
-@media (min-width: 800px) {
-  .content {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
+.second {
+  margin-top: 100px;
 }
 
 @media (min-width: 800px) {
@@ -80,25 +51,22 @@
     flex-direction: row;
     justify-content: space-between;
   }
-  .home .title p {
-    line-height: 4rem;
+
+  .home .person {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin-top: 20px;
   }
 
   .home .title {
     width: 50%;
-    margin-top: 50px;
-    text-align: left;
-    font-size: 25px;
-  }
-
-  .home .skills {
-    width: 50%;
-    margin-top: 70px;
+    margin-top: 20px;
     text-align: left;
     font-size: 25px;
   }
 
   .home .person img {
-    width: 100%;
+    width: 80%;
   }
 }
