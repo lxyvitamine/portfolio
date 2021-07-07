@@ -11,7 +11,7 @@ const NavBar = () => {
   const trackScreenWidth = () => {
     const width = window.innerWidth;
     setScreenWidth(width);
-    if (width > 600) {
+    if (width > 800) {
       setOpen(true);
     } else {
       setOpen(false);
@@ -19,7 +19,7 @@ const NavBar = () => {
   };
 
   const handleClose = () => {
-    if (screenWidth < 600) {
+    if (screenWidth < 800) {
       setOpen(false);
     }
   };
@@ -27,7 +27,7 @@ const NavBar = () => {
   useEffect(() => {
     trackScreenWidth();
     window.addEventListener("resize", trackScreenWidth);
-    //return () => window.removeEventListener("resize", trackScreenWidth);
+    return () => window.removeEventListener("resize", trackScreenWidth);
   }, []);
 
   return (
@@ -67,7 +67,7 @@ const NavBar = () => {
               </Link>
             </li>
             <li>
-              <a href="">Resume</a>
+              <a href={process.env.PUBLIC_URL + "/Xinyi Lu.pdf"}>Resume</a>
             </li>
             <li>
               <Link
