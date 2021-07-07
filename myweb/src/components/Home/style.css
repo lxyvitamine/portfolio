@@ -21,24 +21,58 @@
   border: none;
   outline: none;
   cursor: pointer;
-  font-size: 24px;
+  font-size: 20px;
   margin-top: 30px;
   color: #ffffff;
   padding: 10px 15px;
   border-radius: 999px;
   background-color: #3f71f4;
-  font-family: "Righteous", cursive;
+  font-family: "Raleway", sans-serif;
 }
 
-.home .person {
+.home .skills {
   width: 100%;
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
+  margin-top: 50px;
+  /* display: flex;
+  justify-content: center; */
+  flex-grow: 1;
 }
 
 .home .person img {
   width: 80%;
+}
+
+.skills h1 {
+  margin-bottom: 20px;
+  font-family: "Raleway", sans-serif;
+}
+
+.content {
+  display: grid;
+  font-size: 24px;
+  grid-template-columns: 1fr 1fr;
+  font-family: "Raleway", sans-serif;
+}
+
+.content div {
+  margin-bottom: 25px;
+}
+
+.content strong {
+  line-height: 25px;
+  padding-bottom: 15px;
+  display: block;
+}
+
+.content li {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 800px) {
+  .content {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 @media (min-width: 800px) {
@@ -50,10 +84,16 @@
     line-height: 4rem;
   }
 
-  .home .title,
-  .home .person {
+  .home .title {
     width: 50%;
-    margin-top: 0;
+    margin-top: 50px;
+    text-align: left;
+    font-size: 25px;
+  }
+
+  .home .skills {
+    width: 50%;
+    margin-top: 70px;
     text-align: left;
     font-size: 25px;
   }
